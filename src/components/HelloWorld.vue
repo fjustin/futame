@@ -2,7 +2,7 @@
   <div id="wrapper">
     {{msg}}
     <div class="profile-img">
-      <img :src="image_src">
+      <img :src="image_src" alt="profile image">
     </div>
     <div class="name">
       <h2>#名前</h2>
@@ -42,6 +42,11 @@
         <p>Python</p>
         <p>OpenCV</p>
     </div>
+    <div class="blogs">
+      <h2>#ブログ</h2>
+        <p><a href="http://nimi0370376.hatenablog.com/">はてなブログ</a></p>
+        <p><a href="https://note.mu/fjustin">note</a></p>
+    </div>
     <div class="academy">
       <h2>#研究</h2>
         <h3>事例研究</h3>
@@ -53,9 +58,9 @@
     </div>
     <div class="contact">
       <h2>#コンタクト</h2>
-        <a href="">Twitter</a><br>
-        <a href="">Facebook</a><br>
-        <a href="">GitHub</a><br>
+        <a href="https://twitter.com/Justin0370">Twitter</a><br>
+        <a href="https://www.facebook.com/daiki.futami">Facebook</a><br>
+        <a href="https://github.com/fjustin">GitHub</a><br>
         <p>nimi0370@gmail.com</p>
         <p>daiki-futami@retty.me</p>
     </div>
