@@ -1,6 +1,6 @@
 # tutorial
-
-> A Vue.js project
+futame is a vue.js project. This repository is made for my study about vue js. 
+Perhaps,I often remake any design and any function.
 
 ## Build Setup
 
@@ -28,4 +28,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# futame
