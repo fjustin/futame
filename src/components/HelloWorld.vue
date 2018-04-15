@@ -1,6 +1,5 @@
 <template>
   <div id="wrapper">
-    {{msg}}
     <div class="profile-img">
       <img :src="image_src" alt="profile image">
     </div>
@@ -11,6 +10,9 @@
     <div class="birthday">
       <h2>#生年月日</h2>
         <p>1997/01/15</p>
+    </div>
+    <div class="description">
+        {{msg}}
     </div>
     <div class="history">
       <h2>#学歴</h2>
@@ -27,25 +29,27 @@
         <p>ex CyberAgent.inc Marketing</p>
         <p>Retty.inc Data Analyst</p>
     </div>
-    <div class="skill">
+    <ul class="skill">
       <h2>#スキル</h2>
-        <label class="task-list__item"><input type="checkbox">SEO</label>
-        <label class="task-list__item"><input type="checkbox">コンテンツマーケティング</label>
-        <label class="task-list__item"><input type="checkbox">データ分析</label>
-        <label class="task-list__item"><input type="checkbox">SQL</label>
-        <label class="task-list__item"><input type="checkbox">BigQuery</label>
-        <label class="task-list__item"><input type="checkbox">HTML</label>
-        <label class="task-list__item"><input type="checkbox">CSS</label>
-        <label class="task-list__item"><input type="checkbox">jQuery</label>
-        <label class="task-list__item"><input type="checkbox">Ruby</label>
-        <label class="task-list__item"><input type="checkbox">Ruby on Rails</label>
-        <label class="task-list__item"><input type="checkbox">Python</label>
-        <label class="task-list__item"><input type="checkbox">OpenCV</label>
-    </div>
+        <li><a href="#">SEO</a></li>
+        <li><a href="#">コンテンツマーケティング</a></li>
+        <li><a href="#">データ分析</a></li>
+        <li><a href="#">SQL</a></li>
+        <li><a href="#">BigQuery</a></li>
+        <li><a href="#">jupyter</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Vuejs</a></li>
+        <li><a href="#">Ruby</a></li>
+        <li><a href="#">Ruby on Rails</a></li>
+        <li><a href="#">Python</a></li>
+    </ul>
     <div class="blogs">
       <h2>#ブログ</h2>
         <p><a href="http://nimi0370376.hatenablog.com/">はてなブログ</a></p>
         <p><a href="https://note.mu/fjustin">note</a></p>
+        <p><a href="https://qiita.com/daiki-futami">Qiita</a></p>
     </div>
     <div class="academy">
       <h2>#研究</h2>
@@ -73,33 +77,44 @@ export default {
   data () {
     return {
       image_src: require("../assets/mypage.jpg")
-    }
   }
-}
+}}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@mixin flex-vender() {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.skill {
-  @include flex-vender;
-  flex-direction: column;
-  align-items: center;
-  &__item {
-    width: 270px;
-    text-align: left;
-    $element: #{&};
-    &--checked {
-      @extend #{$element};
-      color: #85a6c6;
-    }
-  }
+ul li {
+  display: inline-block;
+  margin: 0 .3em .3em 0;
+  padding: 0;
+}
+ul li a {
+  display: inline-block;
+  max-width: 100px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 1em;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+ul li a:hover {
+  background-color: #42b983;
+  border: 1px solid #42b983;
+  color: #fff;
 }
 h1 {
   font-weight: normal;
