@@ -3,6 +3,15 @@
     <div class="profile-img">
       <img :src="image_src" alt="profile image">
     </div>
+
+    <slider animation="fade">
+      <slider-item v-for="(i, index) in list" :key="index">
+        <div :style="i">
+          <p style="line-height: 280px; font-size: 5rem; text-align: center;">Page{{ index + 1 }}</p>
+        </div>
+      </slider-item>
+    </slider>
+
     <div class="name">
       <h2>#名前</h2>
         <p>{{ myname }}</p>
@@ -51,8 +60,15 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { Slider, SliderItem } from 'vue-easy-slider'
+
 export default {
   name: 'HelloWorld',
+  components: {
+  Slider,
+  SliderItem
+  },
   data () {
     return {
       image_src: require("../assets/mypage.jpg"),
@@ -87,11 +103,16 @@ export default {
         {name: 'Vuejs'},
         {name: 'Ruby'},
         {name: 'Ruby on Rails'},
-        {name: 'Python'},
+        {name: 'Python'}
       ],
       counter: 0,
       myname: '二見 大揮',
-      birthday: '1997/01/15'
+      birthday: '1997/01/15',
+      list: [
+        { backgroundColor: '#3f51b5', width: '100%', height: '100%' },
+        { backgroundColor: '#eee', width: '100%', height: '100%' },
+        { backgroundColor: '#f44336', width: '100%', height: '100%' }
+      ]
     }
   }}
 </script>
