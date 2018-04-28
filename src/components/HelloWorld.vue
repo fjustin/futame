@@ -16,11 +16,7 @@
     </div>
     <div class="history">
       <h2>#学歴</h2>
-        <p>横浜市立葛野小学校</p>
-        <p>千葉市立幕張本郷中学校</p>
-        <p>横浜創英高等学校</p>
-        <p>東京都市大学環境学部環境創生学科</p>
-        <p>Edith Cowan University</p>
+        <p v-for="school in schools">{{ school.name }}</p>
     </div>
     <div class="history2">
       <h2>#これまで</h2>
@@ -77,10 +73,17 @@ export default {
   data () {
     return {
       image_src: require("../assets/mypage.jpg"),
+      schools: [
+        {name: '横浜市立葛野小学校'},
+        {name: '千葉市立幕張本郷中学校'},
+        {name: '横浜創英高等学校'},
+        {name: '東京都市大学環境学部環境創生学科'},
+        {name: 'Edith Cowan University'}
+      ],
       links: [
-          {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
-          {name: 'note', url: 'https://note.mu/fjustin'},
-          {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
+        {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
+        {name: 'note', url: 'https://note.mu/fjustin'},
+        {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
       ]
     }
   }}
