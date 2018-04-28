@@ -45,11 +45,11 @@
         <li><a href="#">Ruby on Rails</a></li>
         <li><a href="#">Python</a></li>
     </ul>
-    <div class="blogs">
+    <div id="blogs">
       <h2>#ブログ</h2>
-        <p><a href="http://nimi0370376.hatenablog.com/">はてなブログ</a></p>
-        <p><a href="https://note.mu/fjustin">note</a></p>
-        <p><a href="https://qiita.com/daiki-futami">Qiita</a></p>
+        <p v-for="link in links">
+          <a v-bind:href="link.url">{{ link.name }}</a>
+        </p>
     </div>
     <div class="academy">
       <h2>#研究</h2>
@@ -76,9 +76,14 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      image_src: require("../assets/mypage.jpg")
-  }
-}}
+      image_src: require("../assets/mypage.jpg"),
+      links: [
+          {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
+          {name: 'note', url: 'https://note.mu/fjustin'},
+          {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
+      ]
+    }
+  }}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
