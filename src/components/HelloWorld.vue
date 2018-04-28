@@ -5,11 +5,11 @@
     </div>
     <div class="name">
       <h2>#名前</h2>
-        <p>二見 大揮</p>
+        <p>{{ myname }}</p>
     </div>
     <div class="birthday">
       <h2>#生年月日</h2>
-        <p>1997/01/15</p>
+        <p>{{ birthday }}</p>
     </div>
     <div class="history">
       <h2>#学歴</h2>
@@ -22,7 +22,7 @@
     <ul class="skill">
       <h2>#スキル</h2>
         <li v-for="skill in skills">
-          <a href="#">{{skill.name}}</a>
+          <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
         </li>
     </ul>
     <div id="blogs">
@@ -46,7 +46,6 @@
         <a href="https://www.facebook.com/daiki.futami">Facebook</a><br>
         <a href="https://github.com/fjustin">GitHub</a><br>
         <p>nimi0370@gmail.com</p>
-        <p>daiki-futami@retty.me</p>
     </div>
   </div>
 </template>
@@ -89,7 +88,10 @@ export default {
         {name: 'Ruby'},
         {name: 'Ruby on Rails'},
         {name: 'Python'},
-      ]
+      ],
+      counter: 0,
+      myname: '二見 大揮',
+      birthday: '1997/01/15'
     }
   }}
 </script>
@@ -106,7 +108,7 @@ ul li {
   margin: 0 .3em .3em 0;
   padding: 0;
 }
-ul li a {
+ul li button {
   display: inline-block;
   max-width: 100px;
   height: 28px;
@@ -124,7 +126,7 @@ ul li a {
   -webkit-transition: .2s;
   transition: .2s;
 }
-ul li a:hover {
+ul li button:hover {
   background-color: #42b983;
   border: 1px solid #42b983;
   color: #fff;
