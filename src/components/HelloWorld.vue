@@ -5,51 +5,31 @@
     </div>
     <div class="name">
       <h2>#名前</h2>
-        <p>二見 大揮</p>
+        <p>{{ myname }}</p>
     </div>
     <div class="birthday">
       <h2>#生年月日</h2>
-        <p>1997/01/15</p>
-    </div>
-    <div class="description">
-        {{msg}}
+        <p>{{ birthday }}</p>
     </div>
     <div class="history">
       <h2>#学歴</h2>
-        <p>横浜市立葛野小学校</p>
-        <p>千葉市立幕張本郷中学校</p>
-        <p>横浜創英高等学校</p>
-        <p>東京都市大学環境学部環境創生学科</p>
-        <p>Edith Cowan University</p>
+        <p v-for="school in schools">{{ school.name }}</p>
     </div>
     <div class="history2">
       <h2>#これまで</h2>
-        <p>ex GameTrade.inc SEO/Media/Marketing</p>
-        <p>SPUR.inc Engineer</p>
-        <p>ex CyberAgent.inc Marketing</p>
-        <p>Retty.inc Data Analyst</p>
+        <p v-for="job in jobs">{{ job.name }}</p>
     </div>
     <ul class="skill">
       <h2>#スキル</h2>
-        <li><a href="#">SEO</a></li>
-        <li><a href="#">コンテンツマーケティング</a></li>
-        <li><a href="#">データ分析</a></li>
-        <li><a href="#">SQL</a></li>
-        <li><a href="#">BigQuery</a></li>
-        <li><a href="#">jupyter</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">jQuery</a></li>
-        <li><a href="#">Vuejs</a></li>
-        <li><a href="#">Ruby</a></li>
-        <li><a href="#">Ruby on Rails</a></li>
-        <li><a href="#">Python</a></li>
+        <li v-for="skill in skills">
+          <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
+        </li>
     </ul>
-    <div class="blogs">
+    <div id="blogs">
       <h2>#ブログ</h2>
-        <p><a href="http://nimi0370376.hatenablog.com/">はてなブログ</a></p>
-        <p><a href="https://note.mu/fjustin">note</a></p>
-        <p><a href="https://qiita.com/daiki-futami">Qiita</a></p>
+        <p v-for="link in links">
+          <a v-bind:href="link.url">{{ link.name }}</a>
+        </p>
     </div>
     <div class="academy">
       <h2>#研究</h2>
@@ -66,7 +46,6 @@
         <a href="https://www.facebook.com/daiki.futami">Facebook</a><br>
         <a href="https://github.com/fjustin">GitHub</a><br>
         <p>nimi0370@gmail.com</p>
-        <p>daiki-futami@retty.me</p>
     </div>
   </div>
 </template>
@@ -76,9 +55,45 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      image_src: require("../assets/mypage.jpg")
-  }
-}}
+      image_src: require("../assets/mypage.jpg"),
+      schools: [
+        {name: '横浜市立葛野小学校'},
+        {name: '千葉市立幕張本郷中学校'},
+        {name: '横浜創英高等学校'},
+        {name: '東京都市大学環境学部環境創生学科'},
+        {name: 'Edith Cowan University'}
+      ],
+      jobs: [
+        {name: 'ex GameTrade.inc SEO/Media/Marketing'},
+        {name: 'SPUR.inc Engineer'},
+        {name: 'ex CyberAgent.inc Marketing'},
+        {name: 'Retty.inc Data Analyst'}
+      ],
+      links: [
+        {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
+        {name: 'note', url: 'https://note.mu/fjustin'},
+        {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
+      ],
+      skills: [
+        {name: 'SEO'},
+        {name: 'コンテンツマーケティング'},
+        {name: 'データ分析'},
+        {name: 'SQL'},
+        {name: 'BigQuery'},
+        {name: 'jupyter notebook'},
+        {name: 'HTML5'},
+        {name: 'CSS3'},
+        {name: 'jQuery'},
+        {name: 'Vuejs'},
+        {name: 'Ruby'},
+        {name: 'Ruby on Rails'},
+        {name: 'Python'},
+      ],
+      counter: 0,
+      myname: '二見 大揮',
+      birthday: '1997/01/15'
+    }
+  }}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -93,7 +108,7 @@ ul li {
   margin: 0 .3em .3em 0;
   padding: 0;
 }
-ul li a {
+ul li button {
   display: inline-block;
   max-width: 100px;
   height: 28px;
@@ -111,7 +126,7 @@ ul li a {
   -webkit-transition: .2s;
   transition: .2s;
 }
-ul li a:hover {
+ul li button:hover {
   background-color: #42b983;
   border: 1px solid #42b983;
   color: #fff;
