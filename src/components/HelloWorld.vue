@@ -11,35 +11,19 @@
       <h2>#生年月日</h2>
         <p>1997/01/15</p>
     </div>
-    <div class="description">
-        {{msg}}
-    </div>
     <div class="history">
       <h2>#学歴</h2>
         <p v-for="school in schools">{{ school.name }}</p>
     </div>
     <div class="history2">
       <h2>#これまで</h2>
-        <p>ex GameTrade.inc SEO/Media/Marketing</p>
-        <p>SPUR.inc Engineer</p>
-        <p>ex CyberAgent.inc Marketing</p>
-        <p>Retty.inc Data Analyst</p>
+        <p v-for="job in jobs">{{ job.name }}</p>
     </div>
     <ul class="skill">
       <h2>#スキル</h2>
-        <li><a href="#">SEO</a></li>
-        <li><a href="#">コンテンツマーケティング</a></li>
-        <li><a href="#">データ分析</a></li>
-        <li><a href="#">SQL</a></li>
-        <li><a href="#">BigQuery</a></li>
-        <li><a href="#">jupyter</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">jQuery</a></li>
-        <li><a href="#">Vuejs</a></li>
-        <li><a href="#">Ruby</a></li>
-        <li><a href="#">Ruby on Rails</a></li>
-        <li><a href="#">Python</a></li>
+        <li v-for="skill in skills">
+          <a href="#">{{skill.name}}</a>
+        </li>
     </ul>
     <div id="blogs">
       <h2>#ブログ</h2>
@@ -80,10 +64,31 @@ export default {
         {name: '東京都市大学環境学部環境創生学科'},
         {name: 'Edith Cowan University'}
       ],
+      jobs: [
+        {name: 'ex GameTrade.inc SEO/Media/Marketing'},
+        {name: 'SPUR.inc Engineer'},
+        {name: 'ex CyberAgent.inc Marketing'},
+        {name: 'Retty.inc Data Analyst'}
+      ],
       links: [
         {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
         {name: 'note', url: 'https://note.mu/fjustin'},
         {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
+      ],
+      skills: [
+        {name: 'SEO'},
+        {name: 'コンテンツマーケティング'},
+        {name: 'データ分析'},
+        {name: 'SQL'},
+        {name: 'BigQuery'},
+        {name: 'jupyter notebook'},
+        {name: 'HTML5'},
+        {name: 'CSS3'},
+        {name: 'jQuery'},
+        {name: 'Vuejs'},
+        {name: 'Ruby'},
+        {name: 'Ruby on Rails'},
+        {name: 'Python'},
       ]
     }
   }}
