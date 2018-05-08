@@ -5,12 +5,7 @@
     <birthday></birthday>
     <school></school>
     <history></history>
-    <ul class="skill">
-      <h2>#スキル</h2>
-        <li v-for="skill in skills">
-          <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
-        </li>
-    </ul>
+    <skill></skill>
     <div id="blogs">
       <h2>#ブログ</h2>
         <p v-for="link in links">
@@ -42,6 +37,7 @@ import Birthday from './birthday.vue'
 import Name from './name.vue'
 import School from './school.vue'
 import History from './history.vue'
+import Skill from './skill.vue'
 
 export default {
   name: 'HelloWorld',
@@ -50,7 +46,8 @@ export default {
     'birthday': Birthday,
     'name': Name,
     'school': School,
-    'history': History
+    'history': History,
+    'skill': Skill
   },
   props: ['image_src'],
   data () {
@@ -60,22 +57,6 @@ export default {
         {name: 'note', url: 'https://note.mu/fjustin'},
         {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
       ],
-      skills: [
-        {name: 'SEO'},
-        {name: 'コンテンツマーケティング'},
-        {name: 'データ分析'},
-        {name: 'SQL'},
-        {name: 'BigQuery'},
-        {name: 'jupyter notebook'},
-        {name: 'HTML5'},
-        {name: 'CSS3'},
-        {name: 'jQuery'},
-        {name: 'Vuejs'},
-        {name: 'Ruby'},
-        {name: 'Ruby on Rails'},
-        {name: 'Python'}
-      ],
-      counter: 0,
       lists: [
         { image_src: require('../assets/mypage.jpg') },
         { image_src: require('../assets/mypage2.png') },
