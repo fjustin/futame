@@ -7,15 +7,7 @@
     <history></history>
     <skill></skill>
     <blog></blog>
-    <div class="academy">
-      <h2>#研究</h2>
-        <h3>事例研究</h3>
-          <p>ドローンによる低コスト農業の提案とそのコスト計算</p><br>
-          <a href="https://docs.google.com/document/d/1Nl_DkXMyToXKNQ25NGhuBs7zlY1aTVLkz1uenrEWCV0/edit?usp=sharing">論文リンク</a>
-        <h3>卒業研究</h3>
-          <p>Coming soon</p><br>
-          <a href="">論文リンク</a>
-    </div>
+    <academy></academy>
     <div class="contact">
       <h2>#コンタクト</h2>
         <a href="https://twitter.com/Justin0370">Twitter</a><br>
@@ -34,6 +26,7 @@ import School from './school.vue'
 import History from './history.vue'
 import Skill from './skill.vue'
 import Blog from './blog.vue'
+import Academy from './academy.vue'
 
 export default {
   name: 'HelloWorld',
@@ -44,7 +37,8 @@ export default {
     'school': School,
     'history': History,
     'skill': Skill,
-    'blog': Blog
+    'blog': Blog,
+    'academy': Academy
   },
   props: ['image_src'],
   data () {
