@@ -3,15 +3,6 @@
     <div class="profile-img">
       <img :src="image_src" alt="profile image">
     </div>
-
-    <slider animation="fade">
-      <slider-item v-for="(i, index) in list" :key="index">
-        <div :style="i">
-          <p style="line-height: 280px; font-size: 5rem; text-align: center;">Page{{ index + 1 }}</p>
-        </div>
-      </slider-item>
-    </slider>
-
     <div class="name">
       <h2>#名前</h2>
         <p>{{ myname }}</p>
@@ -60,18 +51,11 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import { Slider, SliderItem } from 'vue-easy-slider'
-
 export default {
   name: 'HelloWorld',
-  components: {
-  Slider,
-  SliderItem
-  },
   data () {
     return {
-      image_src: require("../assets/mypage.jpg"),
+      image_src: require('../assets/mypage.jpg'),
       schools: [
         {name: '横浜市立葛野小学校'},
         {name: '千葉市立幕張本郷中学校'},
@@ -108,10 +92,10 @@ export default {
       counter: 0,
       myname: '二見 大揮',
       birthday: '1997/01/15',
-      list: [
-        { backgroundColor: '#3f51b5', width: '100%', height: '100%' },
-        { backgroundColor: '#eee', width: '100%', height: '100%' },
-        { backgroundColor: '#f44336', width: '100%', height: '100%' }
+      lists: [
+        { image_src: require('../assets/mypage.jpg') },
+        { image_src: require('../assets/mypage2.png') },
+        { image_src: require('../assets/mypage3.png') }
       ]
     }
   }}
