@@ -1,10 +1,10 @@
 <template>
-  <div class="contact">
+  <div id="contact">
     <h2>#コンタクト</h2>
-      <a href="https://twitter.com/Justin0370">Twitter</a><br>
-      <a href="https://www.facebook.com/daiki.futami">Facebook</a><br>
-      <a href="https://github.com/fjustin">GitHub</a><br>
+      <p v-for="contact in contacts" v-bind:key="contact">
+      <a v-bind:href="contact.src">{{ contact.name }}</a><br>
       <p>nimi0370@gmail.com</p>
+      </p>
   </div>
 </template>
 
@@ -12,6 +12,11 @@
 export default {
   data () {
     return {
+      contacts: [
+        {src: 'https://twitter.com/Justin0370', name: 'Twitter'},
+        {src: 'https://www.facebook.com/daiki.futami', name: 'Facebook'},
+        {src: 'https://github.com/fjustin', name: 'GitHub'}
+      ]
     }
   }}
 </script>
