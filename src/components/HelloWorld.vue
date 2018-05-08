@@ -6,12 +6,7 @@
     <school></school>
     <history></history>
     <skill></skill>
-    <div id="blogs">
-      <h2>#ブログ</h2>
-        <p v-for="link in links">
-          <a v-bind:href="link.url">{{ link.name }}</a>
-        </p>
-    </div>
+    <blog></blog>
     <div class="academy">
       <h2>#研究</h2>
         <h3>事例研究</h3>
@@ -38,6 +33,7 @@ import Name from './name.vue'
 import School from './school.vue'
 import History from './history.vue'
 import Skill from './skill.vue'
+import Blog from './blog.vue'
 
 export default {
   name: 'HelloWorld',
@@ -47,16 +43,12 @@ export default {
     'name': Name,
     'school': School,
     'history': History,
-    'skill': Skill
+    'skill': Skill,
+    'blog': Blog
   },
   props: ['image_src'],
   data () {
     return {
-      links: [
-        {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
-        {name: 'note', url: 'https://note.mu/fjustin'},
-        {name: 'Qiita', url: 'https://qiita.com/daiki-futami'}
-      ],
       lists: [
         { image_src: require('../assets/mypage.jpg') },
         { image_src: require('../assets/mypage2.png') },
@@ -119,8 +111,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
