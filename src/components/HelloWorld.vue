@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <profile-img></profile-img>
-    <div class="name">
-      <h2>#名前</h2>
-        <p>{{ myname }}</p>
-    </div>
+    <name></name>
     <birthday></birthday>
     <div class="history">
       <h2>#学歴</h2>
@@ -48,12 +45,14 @@
 <script>
 import Profile from '../components/profile.vue'
 import Birthday from './birthday.vue'
+import Name from './name.vue'
 
 export default {
   name: 'HelloWorld',
   components: {
     'profile-img': Profile,
-    'birthday': Birthday
+    'birthday': Birthday,
+    'name': Name
   },
   props: ['image_src'],
   data () {
@@ -92,7 +91,6 @@ export default {
         {name: 'Python'}
       ],
       counter: 0,
-      myname: '二見 大揮',
       lists: [
         { image_src: require('../assets/mypage.jpg') },
         { image_src: require('../assets/mypage2.png') },
