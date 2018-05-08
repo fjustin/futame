@@ -1,8 +1,6 @@
 <template>
-  <div id="wrapper">
-    <div class="profile-img">
-      <img :src="image_src" alt="profile image">
-    </div>
+  <div id="app">
+    <profile-img></profile-img>
     <div class="name">
       <h2>#名前</h2>
         <p>{{ myname }}</p>
@@ -51,11 +49,16 @@
 </template>
 
 <script>
+import Profile from '../components/profile.vue'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    'profile-img': Profile
+  },
+  props: ['image_src'],
   data () {
     return {
-      image_src: require('../assets/mypage.jpg'),
       schools: [
         {name: '横浜市立葛野小学校'},
         {name: '千葉市立幕張本郷中学校'},
@@ -157,10 +160,5 @@ li {
 }
 a {
   color: #42b983;
-}
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
 }
 </style>
