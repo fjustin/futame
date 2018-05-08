@@ -5,10 +5,7 @@
       <h2>#名前</h2>
         <p>{{ myname }}</p>
     </div>
-    <div class="birthday">
-      <h2>#生年月日</h2>
-        <p>{{ birthday }}</p>
-    </div>
+    <birthday></birthday>
     <div class="history">
       <h2>#学歴</h2>
         <p v-for="school in schools">{{ school.name }}</p>
@@ -50,11 +47,13 @@
 
 <script>
 import Profile from '../components/profile.vue'
+import Birthday from './birthday.vue'
 
 export default {
   name: 'HelloWorld',
   components: {
-    'profile-img': Profile
+    'profile-img': Profile,
+    'birthday': Birthday
   },
   props: ['image_src'],
   data () {
@@ -94,7 +93,6 @@ export default {
       ],
       counter: 0,
       myname: '二見 大揮',
-      birthday: '1997/01/15',
       lists: [
         { image_src: require('../assets/mypage.jpg') },
         { image_src: require('../assets/mypage2.png') },
