@@ -1,7 +1,7 @@
 <template>
   <ul class="skill">
     <h2>#スキル</h2>
-      <li v-for="skill in skills">
+      <li v-for="skill in skills" v-bind:key="skill">
         <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
       </li>
   </ul>

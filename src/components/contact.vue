@@ -1,7 +1,10 @@
 <template>
-  <div id="history">
-    <h2>#これまで</h2>
-      <p v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
+  <div class="contact">
+    <h2>#コンタクト</h2>
+      <a href="https://twitter.com/Justin0370">Twitter</a><br>
+      <a href="https://www.facebook.com/daiki.futami">Facebook</a><br>
+      <a href="https://github.com/fjustin">GitHub</a><br>
+      <p>nimi0370@gmail.com</p>
   </div>
 </template>
 
@@ -9,12 +12,6 @@
 export default {
   data () {
     return {
-      jobs: [
-        {name: 'ex GameTrade.inc SEO/Media/Marketing'},
-        {name: 'SPUR.inc Engineer'},
-        {name: 'ex CyberAgent.inc Marketing'},
-        {name: 'Retty.inc Data Analyst'}
-      ]
     }
   }}
 </script>
@@ -31,5 +28,8 @@ h2 {
 h3 {
   font-weight: bold;
   font-size:15px;
+}
+a {
+  color: #42b983;
 }
 </style>

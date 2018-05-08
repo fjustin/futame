@@ -1,7 +1,7 @@
 <template>
   <div id="school">
     <h2>#学歴</h2>
-      <p v-for="school in schools">{{ school.name }}</p>
+      <p v-for="school in schools" v-bind:key="school">{{ school.name }}</p>
   </div>
 </template>
 

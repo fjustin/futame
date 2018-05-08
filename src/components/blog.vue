@@ -1,7 +1,7 @@
 <template>
   <div id="blogs">
     <h2>#ブログ</h2>
-      <p v-for="link in links">
+      <p v-for="link in links" v-bind:key="link">
         <a v-bind:href="link.url">{{ link.name }}</a>
       </p>
   </div>
