@@ -4,10 +4,7 @@
     <name></name>
     <birthday></birthday>
     <school></school>
-    <div class="history2">
-      <h2>#これまで</h2>
-        <p v-for="job in jobs">{{ job.name }}</p>
-    </div>
+    <history></history>
     <ul class="skill">
       <h2>#スキル</h2>
         <li v-for="skill in skills">
@@ -44,6 +41,7 @@ import Profile from '../components/profile.vue'
 import Birthday from './birthday.vue'
 import Name from './name.vue'
 import School from './school.vue'
+import History from './history.vue'
 
 export default {
   name: 'HelloWorld',
@@ -51,17 +49,12 @@ export default {
     'profile-img': Profile,
     'birthday': Birthday,
     'name': Name,
-    'school': School
+    'school': School,
+    'history': History
   },
   props: ['image_src'],
   data () {
     return {
-      jobs: [
-        {name: 'ex GameTrade.inc SEO/Media/Marketing'},
-        {name: 'SPUR.inc Engineer'},
-        {name: 'ex CyberAgent.inc Marketing'},
-        {name: 'Retty.inc Data Analyst'}
-      ],
       links: [
         {name: 'はてなブログ', url: 'http://nimi0370376.hatenablog.com/'},
         {name: 'note', url: 'https://note.mu/fjustin'},
