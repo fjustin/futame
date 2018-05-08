@@ -3,10 +3,7 @@
     <profile-img></profile-img>
     <name></name>
     <birthday></birthday>
-    <div class="history">
-      <h2>#学歴</h2>
-        <p v-for="school in schools">{{ school.name }}</p>
-    </div>
+    <school></school>
     <div class="history2">
       <h2>#これまで</h2>
         <p v-for="job in jobs">{{ job.name }}</p>
@@ -46,24 +43,19 @@
 import Profile from '../components/profile.vue'
 import Birthday from './birthday.vue'
 import Name from './name.vue'
+import School from './school.vue'
 
 export default {
   name: 'HelloWorld',
   components: {
     'profile-img': Profile,
     'birthday': Birthday,
-    'name': Name
+    'name': Name,
+    'school': School
   },
   props: ['image_src'],
   data () {
     return {
-      schools: [
-        {name: '横浜市立葛野小学校'},
-        {name: '千葉市立幕張本郷中学校'},
-        {name: '横浜創英高等学校'},
-        {name: '東京都市大学環境学部環境創生学科'},
-        {name: 'Edith Cowan University'}
-      ],
       jobs: [
         {name: 'ex GameTrade.inc SEO/Media/Marketing'},
         {name: 'SPUR.inc Engineer'},
