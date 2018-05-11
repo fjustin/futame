@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <a v-on:click="toggle"><h2># Click for Works▼</h2></a>
+    <a v-on:click="toggle"><h2># Click for portfolios▼</h2></a>
     <div class="momiji" v-show="showText">
       <img :src="momiji">
       <p>{{ text }}</p>
@@ -48,10 +48,17 @@ h3 {
   font-size:15px;
 }
 img{
-  width:auto;
+  width: auto;
   height:200px;
 }
 .kek{
   margin-top: 30px;
+}
+
+@media screen and ( max-width:479px ){
+  img{
+    width:100%;
+    height:200px;
+  }
 }
 </style>
