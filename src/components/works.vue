@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <a v-on:click="toggle"><h2># Click for Works▼</h2></a>
+    <a v-on:click="toggle"><h2># Click for portfolios▼</h2></a>
     <div class="momiji" v-show="showText">
       <img :src="momiji">
       <p>{{ text }}</p>
