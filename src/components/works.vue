@@ -48,10 +48,17 @@ h3 {
   font-size:15px;
 }
 img{
-  width:auto;
+  width: auto;
   height:200px;
 }
 .kek{
   margin-top: 30px;
+}
+
+@media screen and ( max-width:479px ){
+  img{
+    width:100%;
+    height:200px;
+  }
 }
 </style>
