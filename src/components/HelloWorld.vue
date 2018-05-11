@@ -8,6 +8,7 @@
     <skill></skill>
     <blog></blog>
     <academy></academy>
+    <works></works>
     <contact></contact>
   </div>
 </template>
@@ -22,6 +23,7 @@ import Skill from './skill.vue'
 import Blog from './blog.vue'
 import Academy from './academy.vue'
 import Contact from './contact.vue'
+import Works from './works.vue'
 
 export default {
   name: 'HelloWorld',
@@ -34,7 +36,8 @@ export default {
     'skill': Skill,
     'blog': Blog,
     'academy': Academy,
-    'contact': Contact
+    'contact': Contact,
+    'works': Works
   },
   props: ['image_src'],
   data () {
