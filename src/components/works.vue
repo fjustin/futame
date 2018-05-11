@@ -2,7 +2,8 @@
   <div id="works">
     <a v-on:click="toggle"><h2># Click for portfolios▼</h2></a>
     <div class="momiji" v-show="showText">
-      <img :src="momiji">
+      <a :href="momia"><img :src="momiji"></a>
+      <div class="link">画像クリックでサイトへ</div>
       <p>{{ text }}</p>
     </div>
 
@@ -21,6 +22,7 @@ export default {
       des: 'Python3とOpenCV3を用いたドローン画像の解析を行いました。',
       momiji: require('../assets/momiji.png'),
       kek: require('../assets/research.png'),
+      momia: 'http://momiji.work',
       showText: false
     }
   },
@@ -34,6 +36,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+.link{
+  font-size: 8px;
+  color: #666666;
+}
 h1 {
   font-weight: normal;
 }
