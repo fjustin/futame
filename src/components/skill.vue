@@ -2,7 +2,7 @@
   <ul class="skill">
     <h2>#スキル</h2>
       <li v-for="skill in skills" v-bind:key="skill">
-        <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
+        <button>{{skill.name}}</button>
       </li>
   </ul>
 </template>
@@ -25,8 +25,7 @@ export default {
         {name: 'Ruby'},
         {name: 'Ruby on Rails'},
         {name: 'Python'}
-      ],
-      counter: 0
+      ]
     }
   }}
 </script>
