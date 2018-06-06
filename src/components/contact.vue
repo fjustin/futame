@@ -4,7 +4,6 @@
       <p v-for="contact in contacts" v-bind:key="contact">
       <a v-bind:href="contact.src">{{ contact.name }}</a><br>
       <p>nimi0370@gmail.com</p>
-      </p>
   </div>
 </template>
 
