@@ -1,8 +1,8 @@
 <template>
   <ul class="skill">
-    <h2># Skill</h2>
+    <h2>Skill</h2>
       <li v-for="skill in skills" v-bind:key="skill">
-        <button>{{skill.name}}</button>
+        <button class="button-primary-outlined">{{skill.name}}</button>
       </li>
   </ul>
 </template>
@@ -43,6 +43,7 @@ ul li {
   margin: 0 .3em .3em 0;
   padding: 0;
 }
+/*
 ul li button {
   display: inline-block;
   max-width: 100px;
@@ -66,12 +67,14 @@ ul li button:hover {
   border: 1px solid #42b983;
   color: #fff;
 }
+*/
 h1 {
   font-weight: normal;
 }
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

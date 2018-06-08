@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <h2># Contact</h2>
+    <h2>Contact</h2>
       <p v-for="contact in contacts" v-bind:key="contact">
       <a v-bind:href="contact.src">{{ contact.name }}</a><br>
       <p>nimi0370@gmail.com</p>
@@ -28,6 +28,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

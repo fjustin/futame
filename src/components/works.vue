@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <a v-on:click="toggle"><h2># Click for portfolios▼</h2></a>
+    <a v-on:click="toggle"><h2>Click for portfolios▼</h2></a>
     <div class="momiji" v-show="showText">
       <a :href="momia"><img :src="momiji"></a>
       <div class="link">画像クリックでサイトへ</div>
@@ -56,6 +56,7 @@ h2 {
   color: black;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

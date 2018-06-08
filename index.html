@@ -3,10 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
     <title>futa.me</title>
   </head>
   <body>
+    <header>
+      <h1 class="title" style="font-size: 36px; font-weight: bold;">Welcome to futa.me!</h1>
+      <h2 class="subtitle">HelloWorld to scroll!</h2>
+      <a class="scroll-down"></a>
+    </header>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+    $(document).ready(function() {
+
+    $('.scroll-down, .get-started').on('click', function(e) {
+        e.preventDefault()
+        $('html, body').animate({
+            scrollTop: $('#app').offset().top
+        }, 300)
+    })
+
+  })
+    </script>
   </body>
 </html>

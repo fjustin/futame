@@ -1,6 +1,6 @@
 <template>
   <div id="birthday">
-    <h2># Birthday</h2>
+    <h2>Birthday</h2>
       <p>{{ birthday }}</p>
   </div>
 </template>
@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <profile-img></profile-img>
-    <name></name>
     <introduce></introduce>
+    <name></name>
     <birthday></birthday>
     <school></school>
     <history></history>
@@ -51,7 +51,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h2 {
-
-}
 </style>

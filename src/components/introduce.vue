@@ -1,7 +1,14 @@
 <template>
   <div id="introduce">
-    <h2># Introduce myself</h2>
-    <p>{{ message }}<br>{{ message2 }}</p>
+    <div class="panel">
+      <div class="panel-head">
+          <h3 class="panel-title">Introduce myself</h3>
+      </div>
+
+      <div class="panel-body">
+          <p>{{ message }}<br>{{ message2 }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -9,7 +16,7 @@
 export default {
   data () {
     return {
-      message: '麻布十番のグルメサービス会社でデータ分析をしています。デザイン以外は何でもやっていきます。',
+      message: '初めまして！二見と申します。普段は麻布十番のグルメサービス会社でデータ分析をしています。デザイン以外は何でもやっていきます。',
       message2: 'ブロックチェーンやdappsに興味があり、ethereum周りの技術を勉強中です。'
     }
   },
@@ -38,6 +45,15 @@ img{
   width: auto;
   height:200px;
 }
+
+.panel{
+  width: auto;
+}
+
+.panel-head{
+  padding-left: 50px;
+}
+
 
 p {
   font-size: 14px;

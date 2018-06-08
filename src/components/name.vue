@@ -1,6 +1,6 @@
 <template>
   <div id="name">
-    <h2># Name</h2>
+    <h2>Name</h2>
       <p>{{ myname }}</p>
   </div>
 </template>
@@ -16,14 +16,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
 h1 {
   font-weight: normal;
 }
 h2 {
   font-weight:bold;
   color: black;
-  font-family: 'Quicksand', sans-serif;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;
