@@ -1,6 +1,6 @@
 <template>
   <div id="name">
-    <h2>#名前</h2>
+    <h2>Name</h2>
       <p>{{ myname }}</p>
   </div>
 </template>
@@ -20,8 +20,9 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
+  font-weight:bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

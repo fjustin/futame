@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <profile-img></profile-img>
+    <introduce></introduce>
     <name></name>
     <birthday></birthday>
     <school></school>
@@ -24,6 +25,7 @@ import Blog from './blog.vue'
 import Academy from './academy.vue'
 import Contact from './contact.vue'
 import Works from './works.vue'
+import Introduce from './introduce.vue'
 
 export default {
   name: 'HelloWorld',
@@ -37,7 +39,8 @@ export default {
     'blog': Blog,
     'academy': Academy,
     'contact': Contact,
-    'works': Works
+    'works': Works,
+    'introduce': Introduce
   },
   props: ['image_src'],
   data () {

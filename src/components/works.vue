@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <a v-on:click="toggle"><h2># Click for portfolios▼</h2></a>
+    <a v-on:click="toggle"><h2>Click for portfolios▼</h2></a>
     <div class="momiji" v-show="showText">
       <a :href="momia"><img :src="momiji"></a>
       <div class="link">画像クリックでサイトへ</div>
@@ -10,6 +10,11 @@
     <div class="kek" v-show="showText">
       <img :src="kek">
       <p>{{ des }}</p>
+    </div>
+
+    <div class="drone-site" v-show="showText">
+      <a :href="sitedrone"><img :src="shinz" style="width: auto;height: 400px;"></a>
+      <p>{{ sitedes }}</p>
     </div>
   </div>
 </template>
@@ -23,6 +28,9 @@ export default {
       momiji: require('../assets/momiji.png'),
       kek: require('../assets/research.png'),
       momia: 'http://momiji.work',
+      shinz: require('../assets/site.png'),
+      sitedes: '大学の研究室用にドローンの飛ばし方ガイドサイトを作成しました。vue.jsを使ったモダンなサイトになっています。',
+      sitedrone: 'https://fjustin.github.io/drone-repo/#/',
       showText: false
     }
   },
@@ -48,6 +56,7 @@ h2 {
   color: black;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;
@@ -57,6 +66,7 @@ img{
   width: auto;
   height:200px;
 }
+
 .kek{
   margin-top: 30px;
 }

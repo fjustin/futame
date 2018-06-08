@@ -1,7 +1,7 @@
 <template>
   <div id="history">
-    <h2>#これまで</h2>
-      <p v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
+    <h2>Work History</h2>
+      <p class="step-title" v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
   </div>
 </template>
 
@@ -27,6 +27,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

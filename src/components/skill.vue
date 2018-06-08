@@ -1,8 +1,8 @@
 <template>
   <ul class="skill">
-    <h2>#スキル</h2>
+    <h2>Skill</h2>
       <li v-for="skill in skills" v-bind:key="skill">
-        <button v-on:click="counter += 1">{{skill.name}} {{counter}}</button>
+        <button class="button-primary-outlined">{{skill.name}}</button>
       </li>
   </ul>
 </template>
@@ -18,6 +18,7 @@ export default {
         {name: 'SQL'},
         {name: 'BigQuery'},
         {name: 'jupyter notebook'},
+        {name: 'keras'},
         {name: 'HTML5'},
         {name: 'CSS3'},
         {name: 'jQuery'},
@@ -25,8 +26,7 @@ export default {
         {name: 'Ruby'},
         {name: 'Ruby on Rails'},
         {name: 'Python'}
-      ],
-      counter: 0
+      ]
     }
   }}
 </script>
@@ -43,6 +43,7 @@ ul li {
   margin: 0 .3em .3em 0;
   padding: 0;
 }
+/*
 ul li button {
   display: inline-block;
   max-width: 100px;
@@ -66,12 +67,14 @@ ul li button:hover {
   border: 1px solid #42b983;
   color: #fff;
 }
+*/
 h1 {
   font-weight: normal;
 }
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

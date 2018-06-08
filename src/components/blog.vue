@@ -1,6 +1,6 @@
 <template>
   <div id="blogs">
-    <h2>#ブログ</h2>
+    <h2>Blog</h2>
       <p v-for="link in links" v-bind:key="link">
         <a v-bind:href="link.url">{{ link.name }}</a>
       </p>
@@ -29,6 +29,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;

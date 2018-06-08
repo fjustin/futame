@@ -1,6 +1,6 @@
 <template>
   <div id="school">
-    <h2>#学歴</h2>
+    <h2>School</h2>
       <p v-for="school in schools" v-bind:key="school">{{ school.name }}</p>
   </div>
 </template>
@@ -28,6 +28,7 @@ h1 {
 h2 {
   font-weight: bold;
   color: black;
+  font-size: 28px;
 }
 h3 {
   font-weight: bold;
