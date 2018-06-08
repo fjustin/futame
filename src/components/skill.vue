@@ -1,6 +1,6 @@
 <template>
   <ul class="skill">
-    <h2>#スキル</h2>
+    <h2># Skill</h2>
       <li v-for="skill in skills" v-bind:key="skill">
         <button>{{skill.name}}</button>
       </li>
@@ -18,6 +18,7 @@ export default {
         {name: 'SQL'},
         {name: 'BigQuery'},
         {name: 'jupyter notebook'},
+        {name: 'keras'},
         {name: 'HTML5'},
         {name: 'CSS3'},
         {name: 'jQuery'},

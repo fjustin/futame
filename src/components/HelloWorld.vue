@@ -2,6 +2,7 @@
   <div id="app">
     <profile-img></profile-img>
     <name></name>
+    <introduce></introduce>
     <birthday></birthday>
     <school></school>
     <history></history>
@@ -24,6 +25,7 @@ import Blog from './blog.vue'
 import Academy from './academy.vue'
 import Contact from './contact.vue'
 import Works from './works.vue'
+import Introduce from './introduce.vue'
 
 export default {
   name: 'HelloWorld',
@@ -37,7 +39,8 @@ export default {
     'blog': Blog,
     'academy': Academy,
     'contact': Contact,
-    'works': Works
+    'works': Works,
+    'introduce': Introduce
   },
   props: ['image_src'],
   data () {
@@ -48,4 +51,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+h2 {
+
+}
 </style>

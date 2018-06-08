@@ -1,6 +1,6 @@
 <template>
   <div id="academy">
-    <h2>#研究</h2>
+    <h2># Research</h2>
       <h3>事例研究</h3>
         <p>ドローンによる低コスト農業の提案とそのコスト計算</p><br>
         <a href="https://docs.google.com/document/d/1Nl_DkXMyToXKNQ25NGhuBs7zlY1aTVLkz1uenrEWCV0/edit?usp=sharing">論文リンク</a>

@@ -1,6 +1,6 @@
 <template>
   <div id="birthday">
-    <h2>#生年月日</h2>
+    <h2># Birthday</h2>
       <p>{{ birthday }}</p>
   </div>
 </template>

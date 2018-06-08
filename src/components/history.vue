@@ -1,6 +1,6 @@
 <template>
   <div id="history">
-    <h2>#これまで</h2>
+    <h2># Work History</h2>
       <p v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
   </div>
 </template>
