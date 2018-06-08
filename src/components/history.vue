@@ -1,7 +1,7 @@
 <template>
   <div id="history">
     <h2>Work History</h2>
-      <p v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
+      <p class="step-title" v-for="job in jobs" v-bind:key="job">{{ job.name }}</p>
   </div>
 </template>
 

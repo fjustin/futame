@@ -54,7 +54,6 @@ img{
   padding-left: 50px;
 }
 
-
 p {
   font-size: 14px;
 }
