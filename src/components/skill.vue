@@ -17,7 +17,7 @@ export default {
         {name: 'コンテンツマーケティング'},
         {name: 'SQL'},
         {name: 'BigQuery'},
-        {name: 'jupyter notebook'},
+        {name: 'jupyter'},
         {name: '統計学'},
         {name: 'keras'},
         {name: 'HTML5'},
