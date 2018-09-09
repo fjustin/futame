@@ -8,7 +8,7 @@ module.exports = {
   // then change this to '/my-app/'
   baseUrl: process.env.NODE_ENV === 'production'
     ? '/futame/dist'
-    : '/dist/',
+    : '/',
 
   // where to output built files
   outputDir: 'dist',
