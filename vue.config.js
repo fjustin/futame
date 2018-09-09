@@ -7,11 +7,11 @@ module.exports = {
   // https://www.foobar.com/my-app/
   // then change this to '/my-app/'
   baseUrl: process.env.NODE_ENV === 'production'
-    ? '../dist/'
+    ? '../docs/'
     : '',
 
   // where to output built files
-  outputDir: 'dist',
+  outputDir: 'docs',
 
   // whether to use eslint-loader for lint on save.
   // valid values: true | false | 'error'
