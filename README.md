@@ -1,21 +1,3 @@
-# portfolio
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## About futami.me
+futami.me is portfolio of Daiki Futami.
+It was made by vue.js(vue cli3) and designed by material.
