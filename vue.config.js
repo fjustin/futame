@@ -7,8 +7,8 @@ module.exports = {
   // https://www.foobar.com/my-app/
   // then change this to '/my-app/'
   baseUrl: process.env.NODE_ENV === 'production'
-    ? '/futame/'
-    : '/dist/',
+    ? '/futame/dist'
+    : '',
 
   // where to output built files
   outputDir: 'dist',
