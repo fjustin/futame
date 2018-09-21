@@ -2,6 +2,7 @@
   <div id="app">
     <profile-img></profile-img>
     <introduce></introduce>
+    <contact></contact>
     <name></name>
     <birthday></birthday>
     <history></history>
@@ -10,7 +11,6 @@
     <blog></blog>
     <academy></academy>
     <works></works>
-    <contact></contact>
   </div>
 </template>
 

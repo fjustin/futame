@@ -1,6 +1,6 @@
 <template>
   <div id="works">
-    <a v-on:click="toggle"><h2>Click for portfolios▼</h2></a>
+    <a v-on:click="toggle"><h2>Tap to enjoy works▼</h2></a>
     <div class="momiji" v-show="showText">
       <a :href="momia"><img :src="momiji"></a>
       <div class="link">画像クリックでサイトへ</div>
