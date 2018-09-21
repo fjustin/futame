@@ -19,10 +19,9 @@ export default {
         {name: 'BigQuery'},
         {name: 'jupyter'},
         {name: '統計学'},
-        {name: 'keras'},
         {name: 'HTML5'},
         {name: 'CSS3'},
-        {name: 'Vuejs'},
+        {name: 'Vue.js'},
         {name: 'Ruby'},
         {name: 'Ruby on Rails'},
         {name: 'Python'}
