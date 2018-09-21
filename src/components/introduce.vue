@@ -2,7 +2,7 @@
   <div id="introduce">
     <div class="panel">
       <div class="panel-head">
-          <h3 class="panel-title">Introduce myself</h3>
+          <h3 class="panel-title" style="margin-left: 4.8rem;">About Me</h3>
       </div>
 
       <div class="panel-body">
@@ -38,8 +38,7 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  font-weight: bold;
-  font-size:15px;
+  font-weight: normal;
 }
 img{
   width: auto;
