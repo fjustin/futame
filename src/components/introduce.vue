@@ -2,7 +2,7 @@
   <div id="introduce">
     <div class="panel">
       <div class="panel-head">
-          <h3 class="panel-title">Introduce myself</h3>
+          <h3 class="panel-title" style="margin-left: 4.8rem;">About Me</h3>
       </div>
 
       <div class="panel-body">
@@ -16,8 +16,8 @@
 export default {
   data () {
     return {
-      message: '初めまして！二見と申します。普段は麻布十番のグルメサービス会社でデータ分析をしています。デザイン以外は何でもやっていきます。',
-      message2: 'ブロックチェーンやdappsに興味があり、ethereum周りの技術を勉強中です。'
+      message: 'はじめまして:) 二見と申します。普段は麻布十番のグルメサービス会社でデータ分析をしています。',
+      message2: '基礎統計や予測モデルを勉強中で、Python,Ruby,Vueも趣味で書いてます'
     }
   },
   methods: {
@@ -38,8 +38,7 @@ h2 {
   font-weight: bold;
 }
 h3 {
-  font-weight: bold;
-  font-size:15px;
+  font-weight: normal;
 }
 img{
   width: auto;

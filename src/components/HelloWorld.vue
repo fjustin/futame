@@ -2,6 +2,7 @@
   <div id="app">
     <profile-img></profile-img>
     <introduce></introduce>
+    <contact></contact>
     <name></name>
     <birthday></birthday>
     <history></history>
@@ -10,7 +11,11 @@
     <blog></blog>
     <academy></academy>
     <works></works>
-    <contact></contact>
+    <div class="footer">
+      <div class="credit" style="color: gray; font-size: 10px; font-weight: bold; position: absolute; bottom: 0; right: 0; margin-right: 10px;">
+        © 2018 Daiki Futami(fjustin).
+      </div>
+    </div>
   </div>
 </template>
 
@@ -51,4 +56,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+.footer{
+  position: relative;
+  width: auto;
+  height: 100px;
+  background-color: #FFC108;
+  margin-top: 50px;
+}
 </style>

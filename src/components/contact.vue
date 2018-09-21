@@ -1,9 +1,9 @@
 <template>
   <div id="contact">
-    <h2>Contact</h2>
-      <p v-for="contact in contacts" v-bind:key="contact">
-      <a v-bind:href="contact.src">{{ contact.name }}</a><br>
-      <p>nimi0370@gmail.com</p>
+    <h2>SNS Links</h2>
+      <a href="https://twitter.com/Justin0370" style = "color: #55acee;"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.facebook.com/daiki.futami" style = "color: #3B5998;"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="https://github.com/fjustin" style = "color: #333;"><i class="fab fa-github-alt fa-2x"></i></a>
   </div>
 </template>
 
@@ -11,11 +11,6 @@
 export default {
   data () {
     return {
-      contacts: [
-        {src: 'https://twitter.com/Justin0370', name: 'Twitter'},
-        {src: 'https://www.facebook.com/daiki.futami', name: 'Facebook'},
-        {src: 'https://github.com/fjustin', name: 'GitHub'}
-      ]
     }
   }}
 </script>
@@ -35,6 +30,6 @@ h3 {
   font-size:15px;
 }
 a {
-  color: #42b983;
+  padding: 1rem;
 }
 </style>
