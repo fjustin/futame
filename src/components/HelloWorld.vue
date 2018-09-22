@@ -8,9 +8,9 @@
     <history></history>
     <school></school>
     <skill></skill>
-    <blog></blog>
-    <academy></academy>
     <works></works>
+    <academy></academy>
+    <blog></blog>
     <div class="footer">
       <div class="credit" style="color: gray; font-size: 10px; font-weight: bold; position: absolute; bottom: 0; right: 0; margin-right: 10px;">
         © 2018 Daiki Futami(fjustin).

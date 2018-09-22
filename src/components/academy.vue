@@ -1,6 +1,6 @@
 <template>
   <div id="academy">
-    <h2>Research</h2>
+    <h2>Research at Univ</h2>
         <div class="stepper">
           <div class="step">
             <p class="step-number">1</p>
@@ -36,8 +36,8 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #424242;
   font-size: 28px;
 }
 h3 {
