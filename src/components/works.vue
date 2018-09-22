@@ -3,7 +3,7 @@
     <a v-on:click="toggle"><h2>Tap to enjoy works▼</h2></a>
     <div class="momiji" v-show="showText">
       <a :href="momia"><img :src="momiji"></a>
-      <div class="link">画像クリックでサイトへ</div>
+      <div class="link">画像タップでサイトへ</div>
       <p>{{ text }}</p>
     </div>
 
@@ -14,7 +14,8 @@
 
     <div class="drone-site" v-show="showText">
       <a :href="sitedrone"><img :src="shinz" style="width: auto;height: 400px;"></a>
-      <p>{{ sitedes }}</p>
+      <div class="link">画像タップでサイトへ</div>
+      <p>{{ drone }}</p>
     </div>
   </div>
 </template>
@@ -27,9 +28,9 @@ export default {
       des: 'Python3とOpenCV3を用いたドローン画像の解析を行いました。',
       momiji: require('../assets/momiji.png'),
       kek: require('../assets/research.png'),
-      momia: 'http://momiji.work',
+      momia: 'https://tranquil-hollows-79901.herokuapp.com/',
       shinz: require('../assets/site.png'),
-      sitedes: '大学の研究室用にドローンの飛ばし方ガイドサイトを作成しました。vue.jsを使ったモダンなサイトになっています。',
+      drone: '大学の研究室用にドローンの飛ばし方ガイドサイトを作成しました。vue.jsを使ったモダンなサイトになっています。',
       sitedrone: 'https://fjustin.github.io/drone-repo/#/',
       showText: false
     }
@@ -52,8 +53,8 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #424242;
   cursor: pointer;
   text-decoration: underline;
   font-size: 28px;

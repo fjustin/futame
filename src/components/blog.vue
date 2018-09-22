@@ -27,8 +27,8 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #424242;
   font-size: 28px;
 }
 h3 {

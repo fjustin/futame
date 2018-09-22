@@ -1,6 +1,6 @@
 <template>
   <ul class="skill">
-    <h2>Skill</h2>
+    <h2>Skills</h2>
       <li v-for="skill in skills" v-bind:key="skill">
         <button class="button-primary-outlined">{{skill.name}}</button>
       </li>
@@ -71,8 +71,8 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #424242;
   font-size: 28px;
 }
 h3 {

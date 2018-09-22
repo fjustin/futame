@@ -10,7 +10,7 @@ export default {
   data () {
     return {
       jobs: [
-        {name: 'ex GameTrade.inc SEO/Media/Marketing'},
+        {name: 'ex GameTrade.inc SEO/GrowthHack/Marketing'},
         {name: 'ex SPUR.inc Engineer'},
         {name: 'ex CyberAgent.inc Marketing'},
         {name: 'Retty.inc Data Analyst'}
@@ -25,8 +25,8 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  font-weight: bold;
-  color: black;
+  font-weight: normal;
+  color: #424242;
   font-size: 28px;
 }
 h3 {
