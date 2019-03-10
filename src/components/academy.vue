@@ -11,8 +11,8 @@
           <div class="step">
             <p class="step-number">2</p>
             <p class="step-title">卒業研究</p>
-            <p>畳み込みニューラルネットワークを利用した植物の病気自動判定</p>
-            <a href="">論文リンク</a>
+            <p>機械学習に夜植物の病気の自動判別システムの開発</p>
+            <a href="https://docs.google.com/document/d/1Z0WumC9_zPDVZVioFss_hq08rdkxNuyUQD54Upry0gI/edit?usp=sharing">論文リンク</a>
           </div>
         </div>
   </div>

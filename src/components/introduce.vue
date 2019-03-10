@@ -6,7 +6,7 @@
       </div>
 
       <div class="panel-body">
-          <p>{{ message }}<br>{{ message2 }}</p>
+        <p>{{ message }}<br>{{ message2 }}<br><br>{{ message3 }}</p>
       </div>
     </div>
   </div>
@@ -16,8 +16,9 @@
 export default {
   data () {
     return {
-      message: 'はじめまして:) 二見と申します。普段は麻布十番のグルメサービス会社でデータ分析をしています。',
-      message2: '基礎統計や予測モデルを勉強中で、Python,Ruby,Vueも趣味で書いてます'
+      message: 'はじめまして:) 二見と申します。麻布十番のグルメサービス会社でアプリのデータ分析をしています。',
+      message2: '記述統計を勉強中で、Python,Ruby,Vueも趣味で書いてます。',
+      message3: '趣味はクッキー作りです:D'
     }
   },
   methods: {
