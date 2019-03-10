@@ -10,10 +10,10 @@ export default {
   data () {
     return {
       jobs: [
-        {name: 'ex GameTrade.inc SEO/GrowthHack/Marketing'},
-        {name: 'ex SPUR.inc Engineer'},
+        {name: 'Retty.inc Data Analyst'},
         {name: 'ex CyberAgent.inc Marketing'},
-        {name: 'Retty.inc Data Analyst'}
+        {name: 'ex SPUR.inc Engineer'},
+        {name: 'ex GameTrade.inc SEO/GrowthHack'}
       ]
     }
   }}

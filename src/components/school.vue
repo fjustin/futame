@@ -10,11 +10,11 @@ export default {
   data () {
     return {
       schools: [
-        {name: '横浜市立葛野小学校'},
-        {name: '千葉市立幕張本郷中学校'},
-        {name: '横浜創英高等学校'},
+        {name: 'Edith Cowan University Environmental faculty'},
         {name: '東京都市大学環境学部環境創生学科'},
-        {name: 'Edith Cowan University'}
+        {name: '横浜創英高等学校'},
+        {name: '千葉市立幕張本郷中学校'},
+        {name: '横浜市立葛野小学校'}
       ]
     }
   }}

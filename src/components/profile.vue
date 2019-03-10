@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      image_src: require('../assets/sha.jpg')
+      image_src: require('../assets/pro.jpg')
     }
   }}
 </script>
