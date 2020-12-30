@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <profile-img></profile-img>
     <introduce></introduce>
     <contact></contact>
     <name></name>
@@ -8,8 +7,6 @@
     <history></history>
     <school></school>
     <skill></skill>
-    <works></works>
-    <academy></academy>
     <blog></blog>
     <div class="footer">
       <div class="credit" style="color: gray; font-size: 10px; font-weight: bold; position: absolute; bottom: 0; right: 0; margin-right: 10px;">
@@ -20,31 +17,25 @@
 </template>
 
 <script>
-import Profile from '../components/profile.vue'
 import Birthday from './birthday.vue'
 import Name from './name.vue'
 import School from './school.vue'
 import History from './history.vue'
 import Skill from './skill.vue'
 import Blog from './blog.vue'
-import Academy from './academy.vue'
 import Contact from './contact.vue'
-import Works from './works.vue'
 import Introduce from './introduce.vue'
 
 export default {
   name: 'HelloWorld',
   components: {
-    'profile-img': Profile,
     'birthday': Birthday,
     'name': Name,
     'school': School,
     'history': History,
     'skill': Skill,
     'blog': Blog,
-    'academy': Academy,
     'contact': Contact,
-    'works': Works,
     'introduce': Introduce
   },
   props: ['image_src'],

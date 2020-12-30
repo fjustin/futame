@@ -13,16 +13,13 @@ export default {
     return {
       skills: [
         {name: 'データ分析'},
-        {name: 'SEO'},
-        {name: 'コンテンツマーケティング'},
+        {name: 'プロダクトグロース'},
+        {name: '効果検証設計'},
+        {name: 'UXリサーチ'},
         {name: 'SQL'},
         {name: 'BigQuery'},
         {name: 'jupyter'},
         {name: '統計学'},
-        {name: 'グロースハック'},
-        {name: 'Vue.js'},
-        {name: 'Ruby'},
-        {name: 'Ruby on Rails'},
         {name: 'Python'}
       ]
     }
