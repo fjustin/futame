@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <profile-img></profile-img>
     <introduce></introduce>
     <contact></contact>
     <name></name>
@@ -18,7 +17,6 @@
 </template>
 
 <script>
-import Profile from '../components/profile.vue'
 import Birthday from './birthday.vue'
 import Name from './name.vue'
 import School from './school.vue'
@@ -31,7 +29,6 @@ import Introduce from './introduce.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    'profile-img': Profile,
     'birthday': Birthday,
     'name': Name,
     'school': School,
