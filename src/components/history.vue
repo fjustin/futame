@@ -10,9 +10,9 @@ export default {
   data () {
     return {
       jobs: [
-        {name: 'Retty.inc Data Analyst'},
+        {name: 'PayPay Data Analyst'},
+        {name: 'ex Retty.inc Data Analyst/Planner'},
         {name: 'ex CyberAgent.inc Marketing'},
-        {name: 'ex SPUR.inc Engineer'},
         {name: 'ex GameTrade.inc SEO/GrowthHack'}
       ]
     }
